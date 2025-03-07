@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2 - figma to html</title>
+
+    <link href="favicon.png" rel="icon" type="image/png" sizes="32x32">
+
+    <meta name="description" content="A brief description of your page content, including relevant keywords.">
+    <meta name="keywords" content="void stqge pfe drupal nextjs react">
+
+    <meta property="og:title" content="Akram - Sprint 2 - Figma to html">
+    <meta property="og:description" content="This is the website of the figma design of sprint 2">
+    <meta property="og:image" content="https://media.void.fr/sites/default/files/void-logo_0.jpg" />
+    <meta property="og:url" content="https://www.void.fr/" />
+
+    <link rel="canonical" href="http://127.0.0.1:5500/public/en/index.html">
+    <link rel="alternate" hreflang="en" href="http://127.0.0.1:5500/public/en/index.html">
+    <link rel="alternate" hreflang="ar" href="http://127.0.0.1:5500/public/ar/index.html">
+
+
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+</head>
+
+<body class="relative">
+
+    <div class="switcher rounded-2xl bg-gray-300 p-4 fixed bottom-2 right-2 z-40 cursor-pointer">
+        <!-- sun icon -->
+        <div class="sun w-8 h-8 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                <path
+                    d="M 24.90625 3.96875 C 24.863281 3.976563 24.820313 3.988281 24.78125 4 C 24.316406 4.105469 23.988281 4.523438 24 5 L 24 11 C 23.996094 11.359375 24.183594 11.695313 24.496094 11.878906 C 24.808594 12.058594 25.191406 12.058594 25.503906 11.878906 C 25.816406 11.695313 26.003906 11.359375 26 11 L 26 5 C 26.011719 4.710938 25.894531 4.433594 25.6875 4.238281 C 25.476563 4.039063 25.191406 3.941406 24.90625 3.96875 Z M 10.65625 9.84375 C 10.28125 9.910156 9.980469 10.183594 9.875 10.546875 C 9.769531 10.914063 9.878906 11.304688 10.15625 11.5625 L 14.40625 15.8125 C 14.648438 16.109375 15.035156 16.246094 15.410156 16.160156 C 15.78125 16.074219 16.074219 15.78125 16.160156 15.410156 C 16.246094 15.035156 16.109375 14.648438 15.8125 14.40625 L 11.5625 10.15625 C 11.355469 9.933594 11.054688 9.820313 10.75 9.84375 C 10.71875 9.84375 10.6875 9.84375 10.65625 9.84375 Z M 39.03125 9.84375 C 38.804688 9.875 38.59375 9.988281 38.4375 10.15625 L 34.1875 14.40625 C 33.890625 14.648438 33.753906 15.035156 33.839844 15.410156 C 33.925781 15.78125 34.21875 16.074219 34.589844 16.160156 C 34.964844 16.246094 35.351563 16.109375 35.59375 15.8125 L 39.84375 11.5625 C 40.15625 11.265625 40.246094 10.800781 40.0625 10.410156 C 39.875 10.015625 39.460938 9.789063 39.03125 9.84375 Z M 24.90625 15 C 24.875 15.007813 24.84375 15.019531 24.8125 15.03125 C 24.75 15.035156 24.6875 15.046875 24.625 15.0625 C 24.613281 15.074219 24.605469 15.082031 24.59375 15.09375 C 19.289063 15.320313 15 19.640625 15 25 C 15 30.503906 19.496094 35 25 35 C 30.503906 35 35 30.503906 35 25 C 35 19.660156 30.746094 15.355469 25.46875 15.09375 C 25.433594 15.09375 25.410156 15.0625 25.375 15.0625 C 25.273438 15.023438 25.167969 15.003906 25.0625 15 C 25.042969 15 25.019531 15 25 15 C 24.96875 15 24.9375 15 24.90625 15 Z M 24.9375 17 C 24.957031 17 24.980469 17 25 17 C 25.03125 17 25.0625 17 25.09375 17 C 29.46875 17.050781 33 20.613281 33 25 C 33 29.421875 29.421875 33 25 33 C 20.582031 33 17 29.421875 17 25 C 17 20.601563 20.546875 17.035156 24.9375 17 Z M 4.71875 24 C 4.167969 24.078125 3.78125 24.589844 3.859375 25.140625 C 3.9375 25.691406 4.449219 26.078125 5 26 L 11 26 C 11.359375 26.003906 11.695313 25.816406 11.878906 25.503906 C 12.058594 25.191406 12.058594 24.808594 11.878906 24.496094 C 11.695313 24.183594 11.359375 23.996094 11 24 L 5 24 C 4.96875 24 4.9375 24 4.90625 24 C 4.875 24 4.84375 24 4.8125 24 C 4.78125 24 4.75 24 4.71875 24 Z M 38.71875 24 C 38.167969 24.078125 37.78125 24.589844 37.859375 25.140625 C 37.9375 25.691406 38.449219 26.078125 39 26 L 45 26 C 45.359375 26.003906 45.695313 25.816406 45.878906 25.503906 C 46.058594 25.191406 46.058594 24.808594 45.878906 24.496094 C 45.695313 24.183594 45.359375 23.996094 45 24 L 39 24 C 38.96875 24 38.9375 24 38.90625 24 C 38.875 24 38.84375 24 38.8125 24 C 38.78125 24 38.75 24 38.71875 24 Z M 15 33.875 C 14.773438 33.90625 14.5625 34.019531 14.40625 34.1875 L 10.15625 38.4375 C 9.859375 38.679688 9.722656 39.066406 9.808594 39.441406 C 9.894531 39.8125 10.1875 40.105469 10.558594 40.191406 C 10.933594 40.277344 11.320313 40.140625 11.5625 39.84375 L 15.8125 35.59375 C 16.109375 35.308594 16.199219 34.867188 16.039063 34.488281 C 15.882813 34.109375 15.503906 33.867188 15.09375 33.875 C 15.0625 33.875 15.03125 33.875 15 33.875 Z M 34.6875 33.875 C 34.3125 33.941406 34.011719 34.214844 33.90625 34.578125 C 33.800781 34.945313 33.910156 35.335938 34.1875 35.59375 L 38.4375 39.84375 C 38.679688 40.140625 39.066406 40.277344 39.441406 40.191406 C 39.8125 40.105469 40.105469 39.8125 40.191406 39.441406 C 40.277344 39.066406 40.140625 38.679688 39.84375 38.4375 L 35.59375 34.1875 C 35.40625 33.988281 35.148438 33.878906 34.875 33.875 C 34.84375 33.875 34.8125 33.875 34.78125 33.875 C 34.75 33.875 34.71875 33.875 34.6875 33.875 Z M 24.90625 37.96875 C 24.863281 37.976563 24.820313 37.988281 24.78125 38 C 24.316406 38.105469 23.988281 38.523438 24 39 L 24 45 C 23.996094 45.359375 24.183594 45.695313 24.496094 45.878906 C 24.808594 46.058594 25.191406 46.058594 25.503906 45.878906 C 25.816406 45.695313 26.003906 45.359375 26 45 L 26 39 C 26.011719 38.710938 25.894531 38.433594 25.6875 38.238281 C 25.476563 38.039063 25.191406 37.941406 24.90625 37.96875 Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- moon icon -->
+        <div class="moon w-8 h-8">
+            <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M349.852,343.15c-49.875,49.916-131.083,49.916-181,0c-49.916-49.918-49.916-131.125,0-181.021  c13.209-13.187,29.312-23.25,47.832-29.812c5.834-2.042,12.293-0.562,16.625,3.792c4.376,4.375,5.855,10.833,3.793,16.625  c-12.542,35.375-4,73.666,22.25,99.917c26.209,26.228,64.5,34.75,99.916,22.25c5.792-2.062,12.271-0.582,16.625,3.793  c4.376,4.332,5.834,10.812,3.771,16.625C373.143,313.838,363.06,329.941,349.852,343.15z M191.477,184.754  c-37.438,37.438-37.438,98.354,0,135.771c40,40.021,108.125,36.416,143-8.168c-35.959,2.25-71.375-10.729-97.75-37.084  c-26.375-26.354-39.333-61.771-37.084-97.729C196.769,179.796,194.039,182.192,191.477,184.754z"
+                    fill="#1D1D1B" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- above the fold -->
+    <section class="dark:bg-gray-800">
+        <!-- navbar -->
+        <nav class="capitalize mx-10 py-10 xl:w-10/12 xl:mx-auto dark:text-white">
+
+            <div class="flex items-center justify-between">
+
+                <!-- logo -->
+                <div class="capitalize text-[#BD1469] font-bold text-base md:text-xl dark:text-white">
+                    <span>
+                        <span class="uppercase">is</span>
+                        : simply summy text of to
+                    </span>
+                    <span class="text-black dark:text-white font-light text-xs hidden md:block">
+                        Lorem is simply dummy text of the printing and typesetting
+                    </span>
+                </div>
+
+                <!-- menu burger -->
+                <div class="cursor-pointer block md:hidden " id="burger-menu">
+                    <p class="mb-1 w-8 h-1 bg-black dark:bg-white"></p>
+                    <p class="mb-1 w-8 h-1 bg-black dark:bg-white"></p>
+                    <p class="w-8 h-1 bg-black dark:bg-white"></p>
+                </div>
+
+                <!-- Side Menu -->
+                <div id="side-menu" class="fixed right-0 bg-opacity-50 hidden z-50">
+                    <div class="w-64 h-full bg-white shadow-lg dark:bg-gray-700">
+                        <div class="flex justify-end p-4">
+                            <button id="close-menu" class="text-xl text-black">&times;</button>
+                        </div>
+                        <ul class="space-y-4 p-4">
+                            <li><a name="user page" href="##" class="block text-base">Users</a></li>
+                            <li><a name="contact page" href="##" class="block text-base">Contact Us</a></li>
+                            <li><a name="about page" href="##" class="block text-base">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- links -->
+                <div class="hidden font-light md:block mt-5 text-sm md:text-base md:mt-0">
+                    <a name="user page" href="##" class="pr-4">Users</a>
+                    <a name="contact page" href="##" class="pr-4">Lorem Us</a>
+                    <a name="about page" href="##">Printing us</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- hero section -->
+        <section class="relative z-20">
+            <div class="flex justify-between items-center h-[calc(100vh-44px)] mx-10 xl:w-10/12 xl:mx-auto">
+                <!-- hero content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <h1 class="w-full lg:max-w-96 font-bold text-6xl leading-[1.1]">Various Versi Have Evolved</h1>
+                    <span class="block bg-transparent lg:bg-[#BD1469] my-4 sm:my-8 w-12 h-1 border-black"></span>
+                    <p class="font-light text-sm sm:text-xl sm:leading-8 lg:max-w-[500px]">
+                        Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been
+                        industry's standard dummy text ever since 1500
+                        when an unknown printer took a galley of type and scr-
+                        ambled it to make a type specimen book. It has survived
+                        not only five centuries,
+                    </p>
+                    <button class="mt-8 font-medium px-6 py-3 bg-[#BD1469] text-white">Essentially uncha</button>
+                </div>
+
+                <!-- hero img -->
+                <img src="#"
+                    class="border-8 border-white mb-12 w-[400px] h-[400px] xl:w-[500px] xl:h-[500px] rounded-full bg-[#C4C4C4] hidden lg:block "
+                    alt="void logo" srcset="">
+            </div>
+
+            <!-- bg img -->
+            <img src="Image.webp" class="absolute top-0 right-0 -z-10 object-cover w-full h-full" alt="void logo">
+        </section>
+
+    </section>
+
+    <!-- lorem ipsum & Establishedes section -->
+    <section class="dark:bg-gray-800">
+        <div class="dark:text-white px-5 md:py-10 xl:px-0 xl:w-10/12 xl:mx-auto">
+            <div>
+                <h2 class="mb-14 font-bold text-5xl text-center">Lorem Ipsum Is</h2>
+                <div class=" flex flex-col items-center lg:justify-evenly lg:flex-row">
+                    <img src="#" class="w-full lg:w-[551px] h-[414px] bg-[#C4C4C4] object-cover"
+                        alt="lorem ipsum image">
+                    <div class="mt-10 lg:mt-0 lg:pl-2">
+                        <h3 class="mb-10 font-bold text-4xl capitalize w-full lg:max-w-96">
+                            Lorem Ipsum simply dummy text
+                        </h3>
+                        <p class="dark:text-gray-400 font-light text-[#354858] text-xl sm:leading-8 lg:max-w-[500px]">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the indus-
+                            try's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and s
+                            rambled it to make a type specimen book. It has surv-
+                            ived not only five centuries, but also the leap into
+                            electronic typesetting
+                        </p>
+                        <button class="mt-8 font-medium px-6 py-3 bg-[#BD1469] text-white">Essentially uncha</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-28">
+                <h2 class="mb-14 font-bold text-5xl text-center break-words">Establishedes</h2>
+                <div class="flex flex-col items-center lg:justify-evenly lg:flex-row">
+                    <div class="mb-10 lg:mb-0 lg:pr-2">
+                        <h3 class="mb-10 font-bold text-4xl capitalize w-full lg:max-w-96">
+                            Lorem Ipsum Lorem Ipsum Lorem
+                        </h3>
+                        <p class="dark:text-gray-400 font-light text-[#354858] text-xl sm:leading-8 lg:max-w-[500px]">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the indus-
+                            try's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and s
+                            rambled it to make a type specimen book. It has surv-
+                            ived not only five centuries, but also the leap into
+                            electronic typesetting
+                        </p>
+                        <button class="mt-8 font-medium px-6 py-3 bg-[#BD1469] text-white">Essentially uncha</button>
+                    </div>
+                    <img src="#" class="w-full lg:w-[551px] h-[414px] bg-[#C4C4C4] object-cover"
+                        alt="Establishedes image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- grid section -->
+    <section class="dark:bg-gray-800 bg-[#F2F5F8] dark:border-b dark:border-b-white">
+        <div class="px-5 py-14 md:py-10 xl:px-0 xl:w-10/12 xl:mx-auto">
+
+            <h2
+                class="capitalize dark:text-white pb-14 font-bold lg:w-7/12 lg:mx-auto text-4xl md:text-5xl text-center leading-[1.1]">
+                Lorem Ipsum is simply dummy text of the printing and
+            </h2>
+
+            <!-- cards -->
+            <div
+                class="grid sm:grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] sm:grid-cols-[repeat(auto-fill,_minmax(365px,_1fr))] gap-10 pb-16">
+
+                <div class="shadow-card bg-white">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="drop-shadow-md bg-white shadow-md">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##" href="#"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="drop-shadow-md bg-white shadow-md">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##" href="#"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="drop-shadow-md bg-white shadow-md">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##" href="#"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="drop-shadow-md bg-white shadow-md">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="drop-shadow-md bg-white shadow-md">
+                    <div class="relative w-full h-[179px] bg-[#E4ECF4]">
+                        <img class="w-full h-full" src="" alt="blog post image" />
+                    </div>
+                    <p class="absolute top-40 left-5 capitalize p-2 bg-[#BD1469] font-light w-fit text-xs text-white">
+                        your</p>
+                    <div class="px-5 py-8">
+                        <p class="capitalize text-[#354858] text-xs">LOREM IPSUM LOREM IPSUM</p>
+                        <h3 class="text-xl font-semibold md:max-w-72 mt-4">
+                            Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem
+                        </h3>
+                        <p class="text-[#354858] mt-4 text-base font-light leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                        <a name="read post" href="##" href="#"
+                            class="w-fit block mt-5 pb-2 pr-3 border-b-2 border-[#BD1469] font-bold">
+                            Read the post
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="text-sm font-medium px-6 py-3 bg-[#BD1469] text-white">Lorem Ipsums</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonial  slider -->
+    <section class="dark:bg-gray-800 dark:text-white ">
+        <div class="px-5 py-14 md:py-10 xl:px-0 xl:w-10/12 xl:mx-auto">
+            <div class="relative">
+                <!-- Container for Testimonials -->
+                <div id="testimonial-slider" class="overflow-hidden relative">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="slider-content">
+                        <div class="testimonial-item flex-shrink-0 w-full text-center py-8 px-4">
+                            <p class="text-2xl font-thin italic md:w-6/12 mx-auto">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <p class="mt-4 text-xl text-[#BD1469] font-thin">Lorem Ipsum is</p>
+                            <p class="mt-4 text-xl font-thin tracking-wider">It is a long established fact that a read
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item flex-shrink-0 w-full text-center py-8 px-4">
+                            <p class="text-2xl font-thin italic md:w-6/12 mx-auto">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <p class="mt-4 text-xl text-[#BD1469] font-thin">Lorem Ipsum is</p>
+                            <p class="mt-4 text-xl font-thin tracking-wider">It is a long established fact that a read
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item flex-shrink-0 w-full text-center py-8 px-4">
+                            <p class="text-2xl font-thin italic md:w-6/12 mx-auto">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <p class="mt-4 text-xl text-[#BD1469] font-thin">Lorem Ipsum is</p>
+                            <p class="mt-4 text-xl font-thin tracking-wider">It is a long established fact that a read
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="hidden md:block">
+                    <button id="prev"
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#cccc] text-white p-2 rounded-full w-10 h-10">
+                        ‹
+                    </button>
+                    <button id="next"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#cccc] text-white p-2 rounded-full w-10 h-10">
+                        ›
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="bg-[#f2f2f2] dark:bg-[#1a1a1a] ">
+
+        <div class="container mx-auto">
+            <h2
+                class="text text-[#BD1469] px-14 lg:px-0 py-14 font-bold lg:max-w-lg lg:mx-auto text-4xl md:text-[40px] text-center leading-[1.1]">
+                Contact us
+            </h2>
+
+            <form class="dark:text-white px-14 lg:px-0 lg:max-w-xl lg:mx-auto pb-14" id="contact-form">
+                <div class="mb-5">
+                    <label for="name" class="text-black dark:text-white block mb-2 text-sm font-medium">
+                        Name
+                    </label>
+                    <input type="text" id="name" required class="flex border text-sm w-full p-2.5">
+                    <span id="name-error" class="text-red-500 text-sm mt-1 hidden">Name must be between 3 and 30
+                        characters</span>
+                </div>
+
+                <div class="mb-5">
+                    <label for="email" class="text-black dark:text-white block mb-2 text-sm font-medium">
+                        Email
+                    </label>
+                    <input type="email" id="email" required class="flex flex-1 border text-sm w-full p-2.5">
+                    <span id="email-error" class="text-red-500 text-sm mt-1 hidden">Invalid email format or email must
+                        be
+                        between 3 and 30 characters</span>
+
+                </div>
+
+                <div class="mb-5">
+                    <label for="message" class="text-black dark:text-white block mb-2 text-sm font-medium">
+                        Message
+                    </label>
+                    <textarea name="message" ria-labelledby="message-label" cols="45" rows="8" maxlength="65525"
+                        aria-label="message" class="flex w-full h-20 border" id="textarea"></textarea>
+                    <span id="message-error" class="text-red-500 text-sm mt-1 hidden">Message must be between 100 and
+                        400
+                        characters</span>
+                </div>
+
+                <div class="mt-10 flex justify-center">
+                    <button type="submit" class="text-sm font-medium px-6 py-3 text-white bg-[#BD1469]">Submit</button>
+                </div>
+                <div id="form-feedback" class="mt-5 text-center text-sm hidden"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="dark:bg-gray-800 flex justify-center p-4 visible">
+        <div class="container flex justify-center">
+            <iframe width="90%" height="515" src="https://www.youtube.com/embed/AVHozwCteL4?si=Bk6rquo6a6RKE9nZ"
+                title="Iceland 4k" frameborder="0" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-[#BD1469] dark:bg-[#2d1420] text-white">
+
+        <div class="px-5 md:px-0 py-10 xl:w-10/12 xl:mx-auto">
+            <!-- links -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-center mb-10">
+                <a name="users page" href="##" class="pb-3 md:pb-0  pr-0 md:pr-20 text-xl font-thin ">User</a>
+                <a name="contact us page" href="##" class="pb-3 md:pb-0  pr-0 md:pr-20 text-xl font-thin ">Conact us
+                    Us</a>
+                <a name="about us page" href="##" class="text-xl font-thin ">About Us</a>
+            </div>
+
+            <!-- social media -->
+            <div class="flex items-center justify-start mb-10 flex-wrap md:justify-center">
+                <a name="social links" href="##" class="w-8 h-8 bg-gray-400 rounded-full border mr-5"
+                    aria-label="Twitter"></a>
+                <a name="social links" href="##" class="w-8 h-8 bg-gray-400 rounded-full border mr-5"
+                    aria-label="Twitter"></a>
+                <a name="social links" href="##" class="w-8 h-8 bg-gray-400 rounded-full border mr-5"
+                    aria-label="Twitter"></a>
+                <a name="social links" href="##" class="w-8 h-8 bg-gray-400 rounded-full border mr-5"
+                    aria-label="Twitter"></a>
+                <a name="social links" href="##" class="w-8 h-8 bg-gray-400 rounded-full border"
+                    aria-label="Twitter"></a>
+            </div>
+
+            <!-- info -->
+            <div class="mb-10 flex flex-col md:flex-row justify-start items-start font-thin md:justify-center">
+                <p class="pb-4 md:pr-10">
+                    <i></i>
+                    <span class="block w-72">Lorem Ipsum Lorem,Lorem Ipsum
+                        Lorem Ipsum Lorem,
+                    </span>
+                </p>
+                <p class="pb-4 md:pr-10">
+                    <i></i>
+                    <span>123-456-7890</span>
+                </p>
+                <p class="pb-4 md:pr-10">
+                    <i></i>
+                    <span>lorem@gmail.com</span>
+                </p>
+                <p>
+                    <i></i>
+                    <span>Monday - Friday 0PM - 00 AM</span>
+                </p>
+            </div>
+            <p class="text-left font-thin md:text-center">
+                It is a long established fact that a reader will be distracted by the readable content
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/slider.js" defer></script>
+    <script src="js/form_validation.js" defer></script>
+    <script src="js/toggle_menu.js" defer></script>
+    <script src="js/theme_switcher.js" defer></script>
+</body>
+
+</html>
