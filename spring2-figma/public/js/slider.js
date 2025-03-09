@@ -67,6 +67,14 @@ function initializeSlider(container) {
 
     document.addEventListener('keydown', handleKeyboardControls);
 
+    let autoSlideInterval = setInterval(nextSlide, 3000);
+
+    sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+
+    sliderContainer.addEventListener('mouseleave', () => {
+        autoSlideInterval = setInterval(nextSlide, 3000);
+    });
+
     showSlide(currentIndex, false);
 }
 
